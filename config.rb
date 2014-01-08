@@ -3,9 +3,10 @@
 ###
 
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  # config.output_style = :compact
+  config.line_comments = false
+end
 
 ###
 # Page options, layouts, aliases and proxies
@@ -68,7 +69,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
