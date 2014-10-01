@@ -11,12 +11,12 @@
     %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
     %meta(name="description" content="")
     %meta(name="author" content="")
-    
-    -# Standard viewport tag to set the viewport to the device's width, 
-    -# Android 2.3 devices need this so 100% width works properly and 
+
+    -# Standard viewport tag to set the viewport to the device's width,
+    -# Android 2.3 devices need this so 100% width works properly and
     -# doesn't allow children to blow up the viewport width
     -#%meta{content: "initial-scale=1.0,width=device-width", name: "viewport"}
-    
+
     -# Fix for iPhone 5 fullscreen web apps
     -#%meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)")
     -#%meta(name='apple-mobile-web-app-capable' content='yes')
@@ -27,6 +27,6 @@
   %body{class: current_page.data.body_class || 'page'}
     = yield
     -# Javascripts
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js'
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'
     = javascript_include_tag 'application'
